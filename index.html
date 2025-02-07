@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+       <link rel="stylesheet" href="love_cami.css">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <h1 class = "header_text">Cami...Will you be my valentines?</h1>
+    <div class="gif_container">
+               <img src="bemyval.gif"  alt="Cute animated illustration">
+           </div>
+           <br>
+                     <br>
+                     <div class = "buttons">
+                         <button class="btn" id = "yesButton" onclick="nextPage()">Yes</button>
+                         <button class="btn" id="noButton" onmouseover="moveButton()">No</button>
+                         <script>
+                             function nextPage() {
+                                 window.location.href = "yescami.html";
+                             }
+
+                             function moveButton() {
+                                 var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth);
+                                 var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight);
+                                 document.getElementById('noButton').style.left = `${x}px`;
+                                 document.getElementById('noButton').style.top = `${y}px`;
+                             }
+                         </script>
+                     </div>
+                 </div>
+
+  </body>
+</html>
